@@ -3,14 +3,15 @@ Basic file synchronisation for Sublime Text 2
 
 what it does
 ------------
-whenever a file in the project path is saved it will be synced to the file sync path
+whenever a file is saved the sync settings will be checked for a valid mapping.
+if a mapping is found the file will be copied across including timestamps etc.
 
 how to use it
 -------------
 
 install the plugin as per any plugin.
 
-in your settings file add a filesync array of project_path and file_sync_path entries.
+in your settings file add a filesync array of source and destination pairs.
 
 I use the project specific xxx.sublime-project file, which looks something like:
 
